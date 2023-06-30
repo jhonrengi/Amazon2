@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/",
+        features = "src/test/resources/features/addProductToCart.feature",
         glue = "com.amazon.stepDefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
-public class addToCartProductRunner {
+public class AddToCartProductRunner {
 }
