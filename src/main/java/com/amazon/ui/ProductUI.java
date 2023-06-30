@@ -12,9 +12,10 @@ public class ProductUI {
             .located(By.id("//*[@id='a-autoid-0-announce']"));
 
 
+
     //ul[@class='a-nostyle a-list-link']
 
     public static final Target CBX_QUANTITIES = Target.the("Combo box quantities")
-            .locatedBy("a[id*='quantity_']");
+            .located(By.xpath("//select[@id='quantity']/option"));
 
 }

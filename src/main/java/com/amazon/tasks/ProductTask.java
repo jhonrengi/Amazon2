@@ -17,10 +17,15 @@ public class ProductTask implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                WaitUntil.the(BTN_QUANTITY, WebElementStateMatchers.isVisible())
-                                .forNoMoreThan(10).seconds(),
-                Click.on(BTN_QUANTITY),
+
                 ClickRamdom.click()
+                /*WaitUntil.the(BTN_QUANTITY, WebElementStateMatchers.isVisible())
+                                .forNoMoreThan(10).seconds(),
+                Click.on(BTN_QUANTITY)
+
+                 */
+
+
         );
 
     }
